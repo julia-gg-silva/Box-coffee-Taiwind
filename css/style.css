@@ -1,0 +1,210 @@
+
+@font-face {
+    font-family: 'Marcellus';
+    src: url('/fonts/Marcellus-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --fonte-corpo: 'Marcellus';
+    --cor-fonte: #f1f1f1;
+    --cor-conteudo: #838282;
+}
+
+.media-social-desktop {
+    display: none;
+}
+
+body {
+    font-family: 'Marcellus';
+}
+
+.menu {
+    font-family: sans-serif;
+}
+
+.banner-pricipal {
+    background-image: url("/imagens/coffee-banner.jpg");
+}
+
+.background-color {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.titulo{
+font-family: "Marcellus", serif;
+}
+
+.texto{
+    color: var(--cor-conteudo);
+}
+
+.lettering{
+    background-image: url("/imagens/maquina-expresso.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.imagem-lettering{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.our-coffe-introducao{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.3rem;
+    padding: 6rem 2rem 6rem 2rem;
+    line-height: 20px;
+}
+
+.our-coffe-introducao p{
+    color: #282828;
+}
+
+.background-coffee{
+    background-image: url("/imagens/background-coffee-store2.jpg");
+    padding-bottom: 4rem;
+}
+
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.imagem-produto img{
+    width: 100%;
+}
+
+.imagem-produto{
+    flex-basis: 40%;
+}
+
+footer{
+    background-image: url("/imagens/background-footer.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.background-footer{
+    background-color: rgba(0, 0, 0, 0.4) ;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+
+footer{
+    color: var(--cor-fonte);
+}
+
+.phone{
+    text-align: center;
+}
+
+.num-telefone{
+    font-size: 20px;
+    padding-top: 1rem;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    
+}
+
+.icones-social{
+    display: flex;
+    gap: 3rem;
+}
+
+@media(min-width: 1024px){
+
+    .media-social-desktop{
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .menu{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .conteudo-banner-principal{
+        width: 50%;
+    }
+
+    .titulo{
+        font-size: 2.5rem;
+    }
+
+    .background-color{
+        width: 100%;
+    }
+
+    .welcome-to-coffee-introducao{
+        padding: 2rem 10rem 2rem 10rem;
+    }
+    .welcome-to-coffee-introducao p{
+        width: 80%;
+    }
+
+    .categoria-welcome-coffee{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+    }
+
+    .topicos-categorias-welcome{
+        flex-basis: 20%;
+    }
+
+    .our-coffe-introducao{
+        padding: 6rem 10rem 4rem 10rem;
+    }
+    .our-coffe-introducao p{
+        width: 80%;
+    }
+    .texto{
+        font-size: 1rem;;
+    }
+
+    .produtos{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .imagem-produto{
+        flex-basis: 20%;
+    }
+}
